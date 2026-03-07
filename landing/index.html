@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ad Creative Intelligence Copilot | DataWeave INC</title>
   <meta name="description" content="Analyze ad hooks, CTAs, and message structures; route best candidates into launch-ready campaign drafts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ad Creative Intelligence Copilot | DataWeave INC" />
+  <meta property="og:description" content="Analyze ad hooks, CTAs, and message structures; route best candidates into launch-ready campaign drafts." />
+  <meta property="og:url" content="{{BASE_URL}}" />
+  <meta property="og:image" content="{{BASE_URL}}/assets/logo.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ad Creative Intelligence Copilot | DataWeave INC" />
+  <meta name="twitter:description" content="Analyze ad hooks, CTAs, and message structures; route best candidates into launch-ready campaign drafts." />
+  <meta name="twitter:image" content="{{BASE_URL}}/assets/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <link rel="apple-touch-icon" href="/assets/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -87,12 +98,12 @@
 <body>
   <main class="wrap">
     <nav class="nav">
-      <a class="brand" href="/"><img src="/logo.svg" alt="logo" /> Ad Creative Intelligence Copilot</a>
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt="logo" /> Ad Creative Intelligence Copilot</a>
       <div class="nav-links">
         <a href="/docs-page">Docs</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
-        <a id="bundle-top" target="_blank" rel="noreferrer" href="https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=referral&utm_campaign=bundle_offer">Bundle Offer</a>
+        <a id="bundle-top" target="_blank" rel="noreferrer" href="/docs-page">Launch Guide</a>
       </div>
     </nav>
 
@@ -110,18 +121,18 @@
         <div class="cta">
           <a id="starter-btn" class="btn btn-main" target="_blank" rel="noreferrer" href="{{CHECKOUT_LINK_STARTER}}" data-plan="starter">Start Starter</a>
           <a id="dfy-btn" class="btn btn-ghost" target="_blank" rel="noreferrer" href="{{CHECKOUT_LINK_DFY}}" data-plan="dfy">Start DFY</a>
-          <a id="bundle-btn" class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=referral&utm_campaign=bundle_offer" data-plan="bundle">Open 4-Tool Bundle</a>
+          <a id="bundle-btn" class="btn btn-ghost" target="_blank" rel="noreferrer" href="/docs-page" data-plan="bundle">See Launch Guide</a>
         </div>
 
         <div class="runtime" id="runtime-note">Checking live pricing and activation readiness...</div>
       </article>
 
       <aside class="visual">
-        <img class="hero" src="/hero-relay.svg" alt="Ad Creative Intelligence Copilot overview" />
+        <img class="hero" src="/assets/hero-relay.svg" alt="Ad Creative Intelligence Copilot overview" />
         <div class="chips">
-          <div class="chip"><img src="/tab-local.svg" alt="signal" />Keyword focus: ad creative intelligence api</div>
-          <div class="chip"><img src="/tab-market.svg" alt="ops" />Keyword focus: agent ad analysis</div>
-          <div class="chip"><img src="/tab-saas.svg" alt="workflow" />Keyword focus: creative performance scoring api</div>
+          <div class="chip"><img src="/assets/tab-local.svg" alt="signal" />Keyword focus: ad creative intelligence api</div>
+          <div class="chip"><img src="/assets/tab-market.svg" alt="ops" />Keyword focus: agent ad analysis</div>
+          <div class="chip"><img src="/assets/tab-saas.svg" alt="workflow" />Keyword focus: creative performance scoring api</div>
         </div>
       </aside>
     </section>
@@ -155,11 +166,11 @@
 
     <section class="stack">
       <article class="card">
-        <h3>Related Bundle Paths</h3>
-        <p>Plans are aligned with the broader DataWeave stack. If this product is one part of your flow, use the bundled launch path to reduce setup friction and close faster.</p>
+        <h3>Implementation Paths</h3>
+        <p>Plans are aligned with the broader DataWeave stack. If this product is one part of your flow, use the guided launch path to reduce setup friction and close faster.</p>
         <div class="comp-links">
-          <a target="_blank" rel="noreferrer" href="https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=referral&utm_campaign=stack_bundle">4-Tool Bundle ($656/mo)</a>
-          <a target="_blank" rel="noreferrer" href="https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=referral&utm_campaign=full_launch">Full Launch Bundle ($3,156 today)</a>
+          <a target="_blank" rel="noreferrer" href="/docs-page">Launch Checklist</a>
+          <a target="_blank" rel="noreferrer" href="/docs-page">Go-Live Readiness</a>
         </div>
       </article>
       <article class="card">
@@ -174,7 +185,7 @@
 
     <div class="footer">
       <div>Ad Creative Intelligence Copilot by a DataWeave INC portfolio company.</div>
-      <div><a href="/docs-page">Docs</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a target="_blank" rel="noreferrer" href="https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=referral&utm_campaign=smb72_rollout">Launch Sprint</a></div>
+      <div><a href="/docs-page">Docs</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a target="_blank" rel="noreferrer" href="/docs-page">Launch Guide</a></div>
     </div>
   </main>
 
@@ -213,7 +224,11 @@
       checkoutButtons.forEach((btn) => {
         btn.addEventListener('click', () => {
           const plan = btn.dataset.plan;
-          track('checkout_started', plan === 'starter' || plan === 'dfy' ? plan : null);
+          if (plan === 'starter' || plan === 'dfy') {
+            track('checkout_started', plan);
+          } else {
+            track('bundle_click', plan || null);
+          }
         });
       });
     }
