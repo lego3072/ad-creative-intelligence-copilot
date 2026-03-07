@@ -1,0 +1,21 @@
+# Ad Creative Intelligence Copilot
+
+Ad Creative Intelligence Copilot is an agent-native API product from DataWeave INC.
+
+Primary function:
+- Analyze ad hooks, CTAs, and message structures; route best candidates into launch-ready campaign drafts.
+
+Discovery keywords:
+- ad creative intelligence api
+- agent ad analysis
+- creative performance scoring api
+
+Checkout paths:
+- Starter ({{STARTER_PRICE_LABEL}}): {{CHECKOUT_LINK_STARTER}}
+- DFY ({{DFY_PRICE_LABEL}}): {{CHECKOUT_LINK_DFY}}
+
+Post-payment outcome:
+- Webhook-driven activation, API key provisioning, and onboarding handoff.
+
+Fast lane URL:
+- https://get-agent-router.com/bundle?utm_source=adcreativeintelligencecopilot&utm_medium=llms&utm_campaign=smb72_rollout
